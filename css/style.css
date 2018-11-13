@@ -84,6 +84,7 @@ header {
   background-image: url(../image/profile.png);
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   position:relative;
   width: 100%;
@@ -96,6 +97,7 @@ header {
   position: absolute;
   left:0;
   right:0;
+  top:0;
   width:100%;
   height:100%;
 }
@@ -282,12 +284,14 @@ h3.resume-subtitle {
 /*================================== quote ==========================================*/
 .quote {
   background-image: url(../image/quote.png);
+  background-size: cover;
   background-position:center;
   background-repeat: no-repeat;
+  background-attachment: fixed; /*將背景圖片fix住*/
   position:relative;
   width:100%;
-  padding:0px;
 }
+
 
 .quote-inner {
   color:#fff;
@@ -316,3 +320,166 @@ h3.resume-subtitle {
   letter-spacing: 3px;
 }
 
+/*================================== work ==========================================*/
+.works {
+  background-color: #f7f7f7;
+}
+
+.col-work{
+  float:left;
+  width:33.33333333%;
+  padding:0 15px;
+}
+
+.col-work a {
+  display: block;
+  margin-bottom: 14px;
+  position:relative;
+  -webkit-transition: .2px linear;
+  -moz-transition: .2px linear;
+  -ms-transition: .2px linear;
+  -o-transition: .2px linear;
+  transition: .2px linear;
+  top:0;
+  left:0;
+}
+
+.col-work a:hover {
+  box-shadow: 0 16px 22px 0 rgba(90, 91, 95, 0.3);
+  top: -5px;
+}
+/*================================== Contact ==========================================*/
+.contact-form{
+  width:65%;
+  margin:0 auto;
+  text-align: center;
+}
+
+.contact-form .form-input:first-child,
+.contact-form .form-input:nth-child(2) {
+  float:left;
+  width:50%;
+  padding:0 15px;
+
+}
+.contact-form .form-input:nth-child(3){
+  width:100%;
+  padding:0 15px;
+}
+
+.contact-form input.form-style {
+  width:100%;
+  border:none;
+  border-bottom: 1px solid #333;
+  text-transform: capitalize;
+  padding-bottom: 19px;
+  margin-bottom:12px;
+  outline:none;
+}
+
+.contact-form textarea {
+  width:100%;
+  border:none;
+  border-bottom: 1px solid #333;
+  outline:none;
+}
+.form-submit {
+  text-align:left;
+  padding: 0 15px;
+}
+.form-submit input {
+    font-size: 16px;
+    text-transform: capitalize;
+    border: 1px solid #300;
+    border-radius: 12px;
+    padding: 15px 60px;
+    margin-top: 16px;
+    margin-bottom: 14px;
+    cursor: pointer;
+    -webkit-transition:.4s linear;
+    -moz-transition:.4s linear;
+    -ms-transition:.4s linear;
+    -o-transition:.4s linear;
+    transition:.4s linear;
+}
+.form-submit input:hover {
+  background-color: black;
+  color:white;
+}
+/*================================== footer ==========================================*/
+footer {
+  padding:80px 0;
+  background-color:#000;
+  color:#fff;
+  text-align:center;
+}
+
+.footer-content p {
+  line-height:22px;
+}
+
+.footer-social-icon a i {
+  color:#fff;
+  display:inline-block;
+  font-size:14px;
+  line-height:20px;
+  margin-top:15px;
+  margin-right:15px;
+}
+@media screen and (min-width: 1024px){
+  .menu-button{
+    display:none;
+  }
+  .menu-button-checkbox{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+.container {
+  width:auto;
+}
+.menu-button {
+    float: right;
+    font-size: 25px;
+    line-height: 40px;
+    color: white;
+    background: transparent;
+    padding: 0 20px;
+    border: 0;
+  }
+  
+.menu-button-checkbox {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 55px;
+    height: 40px;
+    opacity: 0;
+  }
+
+  .menu-button-checkbox:checked ~ .nav {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+    margin-top: 0;
+    padding-left: 0;
+    position: fixed;
+    right: 0;
+    top: 40px;
+    width: 100px;
+    height: 100%;
+    background: red;
+  }
+
+  .nav li {
+    border: 0;
+    border-radius: 0;
+  }
+  /*
+    手機版的 css 都寫在這邊
+  */   
+
+}

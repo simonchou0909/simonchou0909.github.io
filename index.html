@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/font-awesome.min.css">
 </head>
 <body>
   <header id="header">
@@ -15,18 +15,22 @@
             <img src="image" alt="logo" height="20" width="10">
           </a>
         </div>
+        <button type="button" class="menu-button">
+          三
+        </button>
+        <input type="checkbox" class="menu-button-checkbox">
         <ul class="nav">
-          <li><a href="">home</a></li>
-          <li><a href="">about</a></li>
-          <li><a href="">service</a></li>
-          <li><a href="">profolio</a></li>
-          <li><a href="">contact</a></li>
+          <li><a href="#home">home</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#service">service</a></li>
+          <li><a href="#profolio">profolio</a></li>
+          <li><a href="#contact">contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
   <!--Homepage Background imnage-->
-  <section class="home_bg">
+  <section class="home_bg" id="home">
     <div class="overlay"></div>
     <div class="container_table">
       <div class="container_table_cell">
@@ -42,7 +46,7 @@
     </div>
   </section>
   <!--About me-->
-  <section class="about_me clearfix"> <!--clearfix:清除因使用float造成的子元素跑出父元素現象-->
+  <section class="about_me clearfix" id="about"> <!--clearfix:清除因使用float造成的子元素跑出父元素現象-->
     <div class="container">
       <h2>about me</h2>
       <div class="summary">
@@ -78,7 +82,7 @@
   </section>
   <!--My Service -->
 
-<section class="my_service clearfix">
+<section class="my_service clearfix" id="service">
   <div class="container">
     <div class="service_items">
       <h2>What I Offer</h2>
@@ -161,5 +165,86 @@
     </div>
   </div>
 </section>
+<!-------------Lase work--------------->
+<section class="works" id="profolio">
+  <div class="container">
+    <h2>LASTEST WORK</h2>
+    <div class="work-items clearfix">
+      <div class="col-work">
+        <a href="/Users/SimonChou/Documents/my-first-link/image/example.jpg">
+          <img src="/Users/SimonChou/Documents/my-first-link/image/example.jpg" alt="profolio-1">
+        </a>
+      </div>
+      <div class="col-work">
+        <a href="/Users/SimonChou/Documents/my-first-link/image/example.jpg">
+          <img src="/Users/SimonChou/Documents/my-first-link/image/example.jpg" alt="profolio-2">
+        </a>
+      </div>
+      <div class="col-work">
+        <a href="/Users/SimonChou/Documents/my-first-link/image/example.jpg">
+          <img src="/Users/SimonChou/Documents/my-first-link/image/example.jpg" alt="profolio-3">
+        </a>
+      </div>
+      <div class="col-work">
+        <a href="/Users/SimonChou/Documents/my-first-link/image/example.jpg">
+          <img src="/Users/SimonChou/Documents/my-first-link/image/example.jpg" alt="profolio-4">
+        </a>
+      </div>
+      <div class="col-work">
+        <a href="/Users/SimonChou/Documents/my-first-link/image/example.jpg">
+          <img src="/Users/SimonChou/Documents/my-first-link/image/example.jpg" alt="profolio-5">
+        </a>
+      </div>
+      <div class="col-work">
+        <a href="/Users/SimonChou/Documents/my-first-link/image/example.jpg">
+          <img src="/Users/SimonChou/Documents/my-first-link/image/example.jpg" alt="profolio-6">
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-------------Contact--------------->
+<section class="contact" id="contact">
+  <div class="container">
+    <h2>get in touch</h2>
+    <div class="contact-form">
+      <form action="">
+        <div class="form-input">
+          <input type="text" name="name" class="form-style" placeholder="input your name" required="">
+        </div>
+        <div class="form-input">
+          <input type="email" name="email" class="form-style" placeholder="enter your name" required>
+        </div>
+        <div class="form-input">
+          <textarea name="textarea" id="message" cols="30" rows="10" placeholder="write message here" required></textarea>
+        </div>
+
+        <div class="form-submit">
+          <input type="submit" name="submit" value="submit">
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+<!-------------footer--------------->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-content">
+      <p>&copy; 2017 ALPHA Camp | All Rights Reserved.</p>
+      <div class="footer-social-icon">
+        <ul>
+          <li>
+            <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-github-alt" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-skype" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
 </body>
 </html>
