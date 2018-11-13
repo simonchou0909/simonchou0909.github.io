@@ -211,7 +211,7 @@ h2 {
 
 .service_content{
   float:left;
-  width:33.33333%;
+  max-width:33.33333%;
   padding:0px 15px;
 }
 
@@ -327,7 +327,7 @@ h3.resume-subtitle {
 
 .col-work{
   float:left;
-  width:33.33333333%;
+  max-width:33.33333333%;
   padding:0 15px;
 }
 
@@ -469,7 +469,7 @@ footer {
     position: fixed;
     right: 0;
     top: 40px;
-    width: 100px;
+    width: 80px;
     height: 100%;
     background: red;
   }
@@ -477,6 +477,30 @@ footer {
   .nav li {
     border: 0;
     border-radius: 0;
+  }
+
+  .col-left {
+    width: 100%;
+  }
+
+  .col-right {
+    width: 100%;
+  }
+
+  .skill {
+    text-align: center;
+  }
+
+  .button-group {
+    text-align:center;
+  }
+
+  .col-work {
+    max-width: 100%;
+  }
+
+  .service_content {
+    max-width:100%;
   }
   /*
     手機版的 css 都寫在這邊
